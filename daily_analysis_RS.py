@@ -54,13 +54,13 @@ for idx, row in current_performance.iterrows():
             eval_ = 'passing'
         else:
             eval_ = 'repeat'
-    elif 'Hole2' in row['TASK']:
+    elif 'Hole' in row['TASK']:
         goal = passing_criteria['Rule_Shift']
         if (row['num_correct_unlit'] >= goal[0]) & (row['per_accuracy_unlit'] >= goal[1]):
             eval_ = 'passing'
         else:
             eval_ = 'repeat'
-    elif 'Hole4' in row['TASK']:
+    elif 'Hole' in row['TASK']:
         goal = passing_criteria['Reversal']
         if (row['num_correct_unlit'] >= goal[0]) & (row['per_accuracy_unlit'] >= goal[1]):
             eval_ = 'passing'
