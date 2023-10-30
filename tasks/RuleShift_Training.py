@@ -39,11 +39,11 @@ initial_state = 'start'
 
 # variables needed
 v.session_duration = 30 * minute  # Session duration
-v.state_dur        = 30 * minute  # this state the duration of the choice_state#
+v.state_dur        = 10 * second  # this state the duration of the choice_state#
 v.iti_dur          = 2 * second  # this state the duration of the Intra_trail_interval
-v.LH_dur           = 2 * second  # limited hold duration
-v.reward_stim_dur  = 30 * minute  # Reward duration this duration
-v.penalty_dur      = 3 * second  # punishment duration(All lights off)
+v.LH_dur           = 12 * second  # limited hold duration
+v.reward_stim_dur  = 30 * second  # Reward duration this duration
+v.penalty_dur      = 5 * second  # punishment duration(All lights off)
 v.steps_rate       = 100  # this is step rate for stepper motor if you want to use peristaltic pump it will be 1000
 v.n_steps          = 25  # this is number of steps for stepper motor if you want to use peristaltic pump it will be 1000
 

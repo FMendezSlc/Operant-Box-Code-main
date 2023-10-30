@@ -2632,6 +2632,8 @@ class MainGui(QtWidgets.QMainWindow, Ui_MainWindow):
                                  QtWidgets.QTableWidgetItem(str(self.label_box7.text())))
         self.tableWidget.setItem(9, 1,
                                  QtWidgets.QTableWidgetItem(str(self.label_box8.text())))
+        self.tableWidget.setItem(1, 0,
+                                 QtWidgets.QTableWidgetItem(str('Date')))
         self.tableWidget.setItem(1, 1,
                                  QtWidgets.QTableWidgetItem(str('BOX')))
         self.tableWidget.setItem(1, 2,
