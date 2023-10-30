@@ -54,24 +54,19 @@ for idx, row in current_performance.iterrows():
             eval_ = 'passing'
         else:
             eval_ = 'repeat'
-    elif 'Hole' in row['TASK']:
+    elif 'Hole2' in row['TASK']:
         goal = passing_criteria['Rule_Shift']
         if (row['num_correct_unlit'] >= goal[0]) & (row['per_accuracy_unlit'] >= goal[1]):
             eval_ = 'passing'
         else:
             eval_ = 'repeat'
-    elif 'Hole' in row['TASK']:
+    elif 'Hole4' in row['TASK']:
         goal = passing_criteria['Reversal']
         if (row['num_correct_unlit'] >= goal[0]) & (row['per_accuracy_unlit'] >= goal[1]):
             eval_ = 'passing'
         else:
             eval_ = 'repeat'   
-    else:
-        goal = passing_criteria['Stage3+']
-        if (row['per_accuracy'] >= goal[0]) & (row['per_omission'] <= goal[1]):
-            eval_ = 'passing'
-        else:
-            eval_ = 'repeat' 
+    
     eval_col.append(eval_)
 
 if any('progression' in file for file in os.listdir(cohort_dir)):
